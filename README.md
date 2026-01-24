@@ -1,4 +1,4 @@
-# firstline-tool
+# 🖋️ firstline-tool
 
 키워드와 톤을 입력하면, 글의 첫 문장 후보를 생성하고 선택·기록하는 실험용 도구
 
