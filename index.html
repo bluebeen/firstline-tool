@@ -222,7 +222,8 @@
          * =====================================================
          */
         async function fetchFirstLines(keywords, tone) {
-            const res = await fetch("http://localhost:3000/api/first-lines", {
+            // ✅ 변경: 절대경로 → 상대경로
+            const res = await fetch("/api/first-lines", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ keywords, tone }),
@@ -337,7 +338,8 @@
          */
         async function sendLogToServer(log) {
             try {
-                await fetch("http://localhost:3000/api/logs", {
+                // ✅ 변경: 절대경로 → 상대경로
+                await fetch("/api/logs", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(log),
